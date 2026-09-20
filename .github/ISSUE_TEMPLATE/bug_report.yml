@@ -1,0 +1,42 @@
+name: Bug report
+description: Tell us what went wrong in Lyre Studio.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Lyre. This report will be public. Remove credentials, invitation links, and private project content from any logs or screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: Lyre version
+      description: Find this in About. Include both host and client versions if they differ.
+      placeholder: "Host: … / Client: …"
+    validations:
+      required: true
+  - type: input
+    id: platforms
+    attributes:
+      label: Host and client platforms
+      placeholder: "For example: Windows 11 host, iPhone client on iOS 26"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Tell us how to reach the problem. For connection problems, include whether you were on the same network or connecting remotely.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include any diagnostic code, relevant redacted logs, or screenshots.
+    validations:
+      required: true
