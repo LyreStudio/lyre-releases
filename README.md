@@ -65,6 +65,28 @@ signing, screenshots, beta distribution, and Android publishing into the project
 workflow, using your configured platform tools and store accounts. Desktop and custom
 projects can use their own publishing setup.
 
+## Keep the development loop connected
+
+**Turn device feedback into the next change.** Attach a live-preview screenshot to an
+agent draft, or explicitly send bounded diagnostics and client error reports to an agent
+with access to that project. Lyre keeps raw source, credentials, and unrestricted logs
+out of those reports.
+
+**Get agents and models ready in one place.** Discover supported models already running
+on your computer, save the ones you want to use, and follow guided installation, sign-in,
+and model-setup steps for supported coding agents. Lyre checks readiness before presenting
+a provider as available.
+
+**Reconnect to the right computer.** Lyre remembers authorized hosts and lets you choose
+which computers and projects appear on a client. When a paired host is reachable on the
+local network, Lyre can use that direct route on connection or reconnection. A host with
+Wake-on-LAN configured and explicitly granted can also receive a wake request from its
+paired client.
+
+**Share the app, not the development environment.** Create revocable, app-scoped access
+for someone who only needs the running app. Viewer access does not expose source files,
+agent sessions, terminals, or host settings.
+
 ## Take your apps with you
 
 A website, dashboard, personal tool, or browser game: open the real app running on
