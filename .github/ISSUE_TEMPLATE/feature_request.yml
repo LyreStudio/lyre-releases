@@ -1,0 +1,25 @@
+name: Feature request
+description: Tell us what would make Lyre more useful for your work.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share the workflow you want to improve. This request is public, so leave out private project details and credentials.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe what you are trying to do and where you get stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: How would you like it to work?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else that would help?
+      description: Optional examples, relevant platforms, or alternatives you have tried.

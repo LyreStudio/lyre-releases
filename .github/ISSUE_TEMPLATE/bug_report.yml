@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve Lyre. This report will be public. Remove credentials, invitation links, and private project content from any logs or screenshots.
+        For security vulnerabilities, use the private security-reporting link in the issue chooser or email support@lyrestudio.net. This bug report will be public. Remove credentials, invitation links, and private project content from any logs or screenshots.
   - type: input
     id: version
     attributes:
