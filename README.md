@@ -49,23 +49,21 @@ compatible model server alongside your chosen cloud providers. Local projects an
 local-network workflows work without a Lyre cloud account.
 
 **Orchestration across models and devices.** Use supported coding agents in parallel,
-with separate worktrees for independent tasks. [Paseo](https://github.com/getpaseo/paseo)
-powers the agent sessions and host connections. Lyre brings those sessions together
-with your projects, local-model setup, and interactive app previews.
+with separate worktrees for independent tasks. Lyre keeps agent sessions, authorized
+host connections, projects, local-model setup, and interactive app previews together.
 
-**Model routing built in.** The [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
-integration connects your gateway's model catalog to Lyre's agent workflow. Choose
-models and use your gateway's configured routing and fallbacks from one workspace.
+**Model routing built in.** Connect a self-hosted model gateway's catalog to Lyre's
+agent workflow. Choose models and use your gateway's configured routing and fallbacks
+from one workspace.
 
 **Test the result as you build.** Review diffs, run your project's tests, inspect
 terminal output, and interact with the live app beside the agent. Try a change on
 another device and bring what you find straight back into the conversation.
 
-**Carry the release workflow through.** Integrated
-[Fastlane](https://github.com/fastlane/fastlane) tools bring signing, screenshots,
-TestFlight, and Android publishing into the project workflow, using your configured
-platform tools and store accounts. Desktop and custom projects can use their own
-publishing setup.
+**Carry the release workflow through.** Integrated mobile-publishing tools bring
+signing, screenshots, beta distribution, and Android publishing into the project
+workflow, using your configured platform tools and store accounts. Desktop and custom
+projects can use their own publishing setup.
 
 ## Take your apps with you
 
