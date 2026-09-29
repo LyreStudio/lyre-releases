@@ -30,14 +30,14 @@ AppImage is the format used by Lyre's Linux in-app updater. Other packages updat
 
 ## macOS
 
-The existing 0.1.1 release includes an **Apple silicon** preview DMG (M1 and newer).
-It contains a signed app, but the current download is **not notarized** and macOS
-Gatekeeper rejects it. A notarized Mac release is needed for the normal installation
-experience. Follow [release notes](https://github.com/LyreStudio/lyre-releases/releases)
-for the next qualified Mac download.
+For an **Apple silicon** Mac (M1 and newer), download the **.dmg** from the
+latest release, open it, and drag **Lyre Studio** into **Applications**. Launch
+Lyre from Applications. The 0.1.4 Mac download is Developer ID signed, notarized,
+and stapled.
 
-No Intel Mac download is currently published. The existing Mac preview has no
-active in-app update feed.
+A **.zip** is also available. No Intel Mac package is currently published.
+The 0.1.4 release includes the macOS update feed; older preview releases may
+require a manual download.
 
 ## iOS and Android
 
@@ -58,7 +58,7 @@ Keep your host awake and connected when accessing it from another device.
 
 ## Updating
 
-**Windows installer and Linux AppImage:** builds with updates enabled check the
+**macOS, Windows installer, and Linux AppImage:** builds with updates enabled check the
 release feed from within Lyre. Open **Settings → About → App updates**, choose
 **Check**, then use **Update** when a newer version is available. Automatic download
 can be enabled there; applying the update restarts the app. Let running tasks finish
@@ -78,15 +78,17 @@ checks and any migration steps belong in that release's notes.
 
 Current package names begin with **Lyre-Foundation**. These are Lyre Studio downloads;
 the architecture labels `x64`, `x86_64`, and `amd64` all identify 64-bit Intel/AMD builds.
-`arm64` identifies the Apple silicon Mac preview.
+`arm64` identifies the Apple silicon Mac build.
 
 Use the release's labeled download links. The **.yml** and **.blockmap** files are
 for the updater. GitHub's **Source code (zip/tar.gz)** links contain this public
 repository's documentation, not the Lyre application.
 
-The current **SHA256SUMS.txt** covers the Windows and Linux packages. To compare a
-saved file against its entry, use PowerShell's `Get-FileHash -Algorithm SHA256`
-on Windows or `sha256sum` on Linux. Matching a checksum confirms the download's
+**SHA256SUMS.txt** covers the Windows and Linux packages.
+**SHA256SUMS-macos.txt** covers the Mac packages. Use the manifest attached to the
+same release as your download. To compare a saved file against its entry, use
+PowerShell's `Get-FileHash -Algorithm SHA256` on Windows, `shasum -a 256` on
+macOS, or `sha256sum` on Linux. Matching a checksum confirms the download's
 bytes match the published value; it does not replace platform signing checks.
 
 [Report an installation problem](https://github.com/LyreStudio/lyre-releases/issues/new?template=bug_report.yml).
