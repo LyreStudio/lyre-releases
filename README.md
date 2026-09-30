@@ -6,12 +6,13 @@
 
 <p align="center"><strong>Build locally. Take it with you.</strong></p>
 
-<p align="center">Your coding agents, your models, your running app.<br>One workspace on your computer. A development loop you can carry across devices.</p>
+<p align="center">Coding agents, your models, and your running app, in one workspace on your computer.<br>Drive it from your phone, tablet, or another computer.</p>
 
 <p align="center">
   <a href="https://github.com/LyreStudio/lyre-releases/releases/latest"><strong>Download Lyre Studio →</strong></a> ·
   <a href="https://lyrestudio.net/docs/quickstart.html">Get started</a> ·
-  <a href="https://lyrestudio.net">Website</a>
+  <a href="https://lyrestudio.net">Website</a> ·
+  <a href="https://discord.gg/eGjaBGJgp">Discord</a>
 </p>
 
 <p align="center">
@@ -24,15 +25,22 @@
   <br><sub>Real desktop and iPhone captures. Mobile clients are in testing.</sub>
 </p>
 
-## From a change to an app you can try
-
-Lyre brings coding agents, project files, terminals, Git review, and interactive
-app previews into one workspace. Work on an existing repository or start a new
-project. Ask for a change, inspect what changed, and try the result while your
-project runs on the computer you chose.
-
-Connect a supported client to continue the conversation or use the app from another
-screen. Your host runs the projects and agents; it must stay awake and connected.
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🤖 Build with agents</h3>
+      Claude, Codex, Copilot, OpenCode, and Pi in one workspace, with task modes from quick questions to orchestrated work.
+    </td>
+    <td width="33%" valign="top">
+      <h3>▶️ Try the real app</h3>
+      Run your project and keep a live preview beside the conversation. Review the diff, run the tests, try the result.
+    </td>
+    <td width="33%" valign="top">
+      <h3>📱 Take it anywhere</h3>
+      Continue from a paired phone, tablet, or computer, open your whole desktop remotely, or share just the app.
+    </td>
+  </tr>
+</table>
 
 ## Get Lyre Studio
 
@@ -40,7 +48,7 @@ screen. Your host runs the projects and agents; it must stay awake and connected
 
 | Your computer | Recommended download | Availability |
 | --- | --- | --- |
-| **macOS · Apple silicon** | **.dmg** — open, then drag Lyre to Applications | 0.1.4 is signed and notarized |
+| **macOS · Apple silicon** | **.dmg**: open it, then drag Lyre to Applications | Signed and notarized |
 | **Windows · Intel / AMD 64-bit** | **Setup .exe** installer | Available · unsigned |
 | **Linux · Intel / AMD 64-bit** | **AppImage**, or **.deb / .rpm** | Available · unsigned |
 
@@ -50,85 +58,126 @@ testing and distribution channels; check [mobile availability](https://lyrestudi
 [Installation and updates](INSTALL.md) · [Release notes](https://github.com/LyreStudio/lyre-releases/releases) ·
 [Compare plans](https://lyrestudio.net/#pricing)
 
-## Keep your tools. Choose your models.
+## Major features
 
-**Work where your code already lives.** Bring your repositories, development
-services, terminals, and Git workflows. Local projects and local-network workflows
-work without a Lyre cloud account. Your project's own tools and dependencies still
-run on the host.
+### Every agent, the right mode
 
-**Choose the agent for the task.** Lyre supports Claude, Codex, OpenCode, Pi, and
-other provider integrations. Keep conversations organized by project, run independent
-work in separate worktrees, and review the results together. Provider accounts,
-installation requirements, and model access vary.
+Bring the coding agent you already use: **Claude Code, Codex, GitHub Copilot, OpenCode,
+and Pi** run side by side, organized by project. Pick a **task mode** in the composer:
 
-**Use local models alongside cloud providers.** Connect Ollama, LM Studio,
-llama.cpp, or a compatible model server. Choose the models you want to use and
-follow the supported setup flow. Local inference depends on your hardware and
-chosen agent's model support.
+| Mode | Use it to |
+| --- | --- |
+| **Agent** | make the change end to end |
+| **Plan** | agree on an approach before any edits |
+| **Debug** | investigate a failure step by step |
+| **Ask** | get an answer without touching files |
+| **Multitask** | hand parts of a task to helper agents |
+| **Orchestrate** | coordinate larger work across helpers and review it together |
+
+Run independent work in separate **Git worktrees**, queue follow-up messages, dictate
+by voice, and attach screenshots or files. Provider accounts, installation, and model
+access vary by provider.
+
+### Your app, live, beside the chat
+
+Start your project's preview with **Open app** and try it next to the conversation,
+or open it on its own. Agents and previews have independent lifecycles: stopping one
+doesn't stop the other. Attach a preview screenshot to the next message when
+something looks off.
 
 <p align="center">
-  <img src="assets/model-choice.png" alt="Lyre Studio 0.1.4 Connections screen showing model-source choices and setup actions" width="100%">
+  <img src="assets/desktop-studio.png" alt="Lyre Studio 0.1.4 workspace with the Harbor Kitchen app running in a live preview beside the project" width="100%">
 </p>
 
-## See the change. Try the result.
+### Review before you ship
 
-**Your agent and app, together.** Keep a live preview beside the conversation,
-or open the app on its own. Agent work and app previews have independent lifecycles.
-
-**Review before you ship.** Inspect file changes and diffs, use your project's
-tests, and read terminal output. A running app is something you can try; your
-checks determine whether the change is ready.
-
-**Bring feedback into the next turn.** Attach a preview screenshot to the agent
-conversation. Explicitly send bounded diagnostics or client error reports to an
-agent authorized for that project.
+Inspect every changed file in the **Changes** view, read the actual diff, and run
+your project's tests in built-in **terminals**. Commit, open a pull request, or
+keep iterating. A running app is something you can try; your checks decide whether
+it's ready.
 
 <p align="center">
   <img src="assets/review-changes.png" alt="Lyre Studio 0.1.4 Changes view showing the actual diff for a sample website edit" width="100%">
 </p>
 
-## Carry the development loop across devices
+### Your models, your way
 
-Continue agent work on a connected client, try a website by touch, or play the
-browser game you are building. Lyre keeps computer and project context visible
-so you know where the work is running.
+- **Cloud providers:** connect Anthropic, OpenAI, and other supported sources with
+  named, host-stored key profiles or managed setup.
+- **Local models:** add **Ollama, LM Studio, llama.cpp**, or a compatible server and
+  use its models like any other. No model weights are bundled.
+- **Routing:** browse a shared model catalog, set routes, and see a live route map
+  and usage report.
+
+Local inference depends on your hardware and the chosen agent's model support.
+
+<p align="center">
+  <img src="assets/model-choice.png" alt="Lyre Studio 0.1.4 Connections screen showing model-source choices and setup actions" width="100%">
+</p>
+
+### Continue on any device
+
+Your computer runs the projects and agents; **paired clients** pick up the same work.
+Follow an agent, review its changes, try a website by touch, or play the browser
+game you're building from your phone. Connect directly on your network or through an
+**end-to-end encrypted relay**. The host must stay awake and connected.
 
 <p align="center">
   <img src="assets/phone-agent.png" alt="Reviewing an agent's completed change on iPhone" width="30%">&nbsp;
   <img src="assets/phone-preview.png" alt="Trying the Harbor Kitchen sample website in Lyre on iPhone" width="30%">&nbsp;
   <img src="assets/phone-game.png" alt="Playing the Orbit Run sample browser game in Lyre on iPhone" width="30%">
-  <br><sub>Direct the work. Try the website. Play the game.<br>Earlier testing-build captures; these demonstrate the workflow, not every platform's current release.</sub>
+  <br><sub>Direct the work. Try the website. Play the game.<br>Earlier testing-build captures; they show the workflow, not every platform's current release.</sub>
 </p>
 
-**Give testers access to the app.** App-only sharing grants access to an explicitly
-shared app, with revocation controls. It keeps source files, agent sessions,
-terminals, and host settings outside that viewer's access. Client-preview support
-varies by platform and build. Pro includes remote live app previews and app-scoped
-sharing; see [plans](https://lyrestudio.net/#pricing).
+### Your whole desktop, built in
+
+Open a connected computer's **entire screen** from Lyre and take control, for the
+tools that don't live in a browser: a game engine, a design app, a build monitor.
+Remote desktop is native to Lyre, so a normal install needs **no Docker, RDP server,
+gateway, or SDK**. Each session asks for consent, and pairing alone never grants
+desktop access. *Early: cross-device qualification is ongoing, and support depends on
+platform, permissions, and build.*
+
+### Share the app, not the code
+
+Invite a tester with a **single-use link or QR code**. **App-only access** lets them
+use the app you shared, while source files, agent sessions, terminals, and computer
+settings stay private. Revoke access at any time. For a public URL, **opt-in public
+service links** require both your grant and an access token. Client support varies by
+platform and plan; see [plans](https://lyrestudio.net/#pricing).
+
+### It keeps working while you're away
+
+**Activity** groups work that needs your input, is ready to review, or is still
+running. **Schedules** run recurring agent tasks, and **notifications** tell you when
+work finishes or a preview becomes ready.
+
+## What's supported
+
+| | Supported today |
+| --- | --- |
+| **Host computers** | macOS (Apple silicon), Windows 64-bit, Linux 64-bit |
+| **Clients** | Lyre Studio desktop app; iOS and Android apps in testing |
+| **Coding agents** | Claude Code, Codex, GitHub Copilot, OpenCode, Pi |
+| **Model sources** | Provider accounts and API keys; Ollama, LM Studio, llama.cpp, and compatible local servers |
+| **Connections** | Direct on your local network or VPN, or through an end-to-end encrypted relay |
+| **Previews** | Web apps and browser games served by your project, on the desktop and on paired clients |
+| **Remote desktop** | Built-in whole-desktop viewing and control (early) |
+| **Accounts** | Local projects and local-network use need no Lyre cloud account |
 
 <details>
-<summary><strong>More of the workspace: automation, routing, publishing, and customization</strong></summary>
+<summary><strong>More in the workspace: publishing, marketplace, plugins, and customization</strong></summary>
 
-- **Activity and schedules:** see work that needs input, is ready to review, or is
-  still running; configure recurring agent tasks and notifications.
-- **Model routing:** manage model sources, catalogs, routes, and usage through the
-  supported routing integrations. Runtime availability varies by platform.
-- **Release tools:** prepare mobile publishing with integrated Fastlane tools
-  and your configured signing, platform tooling, and store accounts. Setup is
-  separate from a completed store submission.
+- **Publish and deploy:** prepare mobile releases with integrated Fastlane tools, your
+  signing setup, platform tooling, and store accounts. Setting up isn't the same as a
+  completed store submission.
 - **Marketplace and plugins:** browse project starters and templates, and manage
-  executable host plugins. Community Extensions are a discovery catalog;
-  extension installation is unavailable.
-- **Guided or Developer:** choose a simpler project-to-chat-to-preview flow or a
-  denser development workspace, while retaining selected work and drafts.
-- **Remote desktop:** 0.1.4 includes native desktop-viewing and control surfaces.
-  Installed cross-device qualification remains in progress; support depends on
-  host permissions, platform, and build. App-only sharing does not grant desktop access.
-
-Lyre is in early access. Capabilities depend on the installed build, provider,
-platform, and configured services. Release notes describe version-specific changes
-and known limitations.
+  executable host plugins. Community Extensions are a discovery catalog; extension
+  installation is unavailable.
+- **Guided or Developer:** choose a simpler project → chat → preview flow or a dense
+  development workspace. Switching keeps your selected work and drafts.
+- **Library and projects:** find recent work across computers, group projects, and
+  import sessions started in a terminal.
 
 </details>
 
@@ -136,14 +185,18 @@ and known limitations.
 
 1. **Open a project.** Choose the folder on the computer that will run it.
 2. **Connect an agent or model.** Follow its installation and account setup.
-3. **Make a change and try it.** Configure the preview command, run the app, and
-   review the agent's work.
+3. **Make a change and try it.** Ask for a change, press **Open app**, and review the
+   agent's work.
 4. **Connect another device.** Use **Pair Device** with a supported client and
    explicitly grant the access it needs.
 
 [First-project guide](https://lyrestudio.net/docs/quickstart.html) ·
 [Existing projects](https://lyrestudio.net/docs/projects.html) ·
 [App recipes](https://lyrestudio.net/docs/app-recipes.html)
+
+Lyre is in early access. Capabilities depend on the installed build, provider,
+platform, and configured services. [Release notes](https://github.com/LyreStudio/lyre-releases/releases)
+list version-specific changes and known limitations.
 
 ## Help shape Lyre
 
