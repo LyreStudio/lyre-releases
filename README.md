@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://github.com/LyreStudio/lyre-releases/releases/latest"><strong>Download Lyre Studio →</strong></a> ·
   <a href="https://lyrestudio.net/docs/quickstart.html">Get started</a> ·
+  <a href="TEAMWORK.md">Team guide</a> ·
   <a href="https://lyrestudio.net">Website</a> ·
   <a href="https://discord.gg/eGjaBGJgp">Discord</a>
 </p>
@@ -59,6 +60,33 @@ testing and distribution channels; check [mobile availability](https://lyrestudi
 [Compare plans](https://lyrestudio.net/#pricing)
 
 ## Major features
+
+### Build together, with clear project access
+
+Work with teammates on the same project from connected computers and mobile
+clients. See the work already underway, divide the next steps, and validate the
+result together.
+
+1. **Choose who can do what.** Grant Developer access to selected projects, keep
+   host management with Owners, and give testers access only to the apps you share.
+2. **Follow the same work.** Open accessible agent conversations in the project's
+   workspace to read requests and responses. Shared pending requests carry device
+   labels, helping you spot a task that is already queued.
+3. **Bring feedback into the conversation.** Ask about an agent's result or send a
+   correction in the same chat. Use inline code review comments where your
+   connection supports them, then send the review to the agent.
+4. **Divide tasks and edits.** Use separate conversations for independent jobs and
+   Git worktrees for separate checkouts. Supporting builds can plan and dispatch
+   agent work across connected computers with their available models.
+5. **Check the result together.** Review the changes and tests, integrate the
+   branches, and let teammates try the running app on their devices.
+
+Shared visibility helps people avoid duplicate work; the team still agrees on
+ownership and reviews overlapping changes. Developer commands execute with the
+host account's permissions, so project grants are for trusted collaborators.
+Available controls depend on the connection role and installed versions.
+
+[**Set up your team and follow a complete workflow →**](TEAMWORK.md)
 
 ### Every agent, the right mode
 
