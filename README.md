@@ -47,11 +47,11 @@
 
 [**Download the latest release →**](https://github.com/LyreStudio/lyre-releases/releases/latest)
 
-| Your computer | Recommended download | Availability |
-| --- | --- | --- |
-| **macOS · Apple silicon** | **.dmg**: open it, then drag Lyre to Applications | Signed and notarized |
-| **Windows · Intel / AMD 64-bit** | **Setup .exe** installer | Available · unsigned |
-| **Linux · Intel / AMD 64-bit** | **AppImage**, or **.deb / .rpm** | Available · unsigned |
+| Your computer                    | Recommended download                              | Availability         |
+| -------------------------------- | ------------------------------------------------- | -------------------- |
+| **macOS · Apple silicon**        | **.dmg**: open it, then drag Lyre to Applications | Signed and notarized |
+| **Windows · Intel / AMD 64-bit** | **Setup .exe** installer                          | Available · unsigned |
+| **Linux · Intel / AMD 64-bit**   | **AppImage**, or **.deb / .rpm**                  | Available · unsigned |
 
 No Intel Mac package is currently published. iOS and Android clients have separate
 testing and distribution channels; check [mobile availability](https://lyrestudio.net/docs/release-status.html#ios).
@@ -59,10 +59,15 @@ testing and distribution channels; check [mobile availability](https://lyrestudi
 [Installation and updates](INSTALL.md) · [Release notes](https://github.com/LyreStudio/lyre-releases/releases) ·
 [Compare plans](https://lyrestudio.net/#pricing)
 
-### Install the CLI from npm
+### Use Lyre from your terminal
 
-Control Lyre projects, workspaces and agents from your terminal. Requires Node.js
-22.12 or newer:
+The npm package installs the **CLI and host daemon** for managing projects,
+workspaces and coding agents. Download the desktop app above for the graphical
+workspace. The host runs your projects and agents; connected clients let you
+follow and control that work.
+
+Requires **Node.js 22.12 or newer**, with npm. The initial npm release is verified
+on **Windows x64 with Node.js 24**; installed macOS/Linux qualification is pending.
 
 ```sh
 npm install --global @lyrestudio/cli@beta
@@ -70,12 +75,54 @@ lyre --version
 lyre --help
 ```
 
+If you already use Lyre Studio desktop, try `lyre status` to check the selected
+host. To run a standalone host from npm, start its background daemon:
+
+```sh
+lyre daemon start
+lyre status
+lyre provider ls
+```
+
+Install and sign into a supported coding provider before starting an agent.
+From an existing project folder, this example uses Codex to explain the project:
+
+```sh
+lyre project create .
+lyre run --provider codex --cwd . --task-mode ask "Explain this project without changing files."
+lyre ls
+```
+
+Choose an available provider shown by `lyre provider ls`; replace `codex` if you
+use another. To follow a task, use `lyre logs AGENT_ID --follow`, replacing
+`AGENT_ID` with its ID from `lyre ls`. Use `lyre pair` to approve a trusted
+client and obtain connection instructions; review the requested owner access.
+
 The npm CLI is **0.11.0-beta.3**, accompanying desktop **0.1.6**. The `lyre`,
-`lyre-foundation` and `paseo` commands use the same CLI. The initial npm release is
-verified on Windows x64 with Node.js 24; macOS/Linux qualification is pending.
+`lyre-foundation` and `paseo` commands are aliases for the same CLI. npm installs
+the required runtime packages automatically.
 
 [npm package](https://www.npmjs.com/package/@lyrestudio/cli) ·
-[CLI setup and updates](INSTALL.md#command-line-interface)
+[Full CLI walkthrough, updates and troubleshooting](INSTALL.md#command-line-interface)
+
+### Lyre features you can use from the CLI
+
+The CLI brings more of Lyre's development workflow to your terminal:
+
+| Feature                    | How to use it                                                                                                                                                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Task modes**             | Use `lyre run --task-mode plan` to plan a change, `debug` to investigate a failure, `ask` for questions, or `multitask` for useful delegation when the provider has the tools. Use `agent` to carry out a change.                          |
+| **Separate Git worktrees** | Add `--new-workspace worktree --new-branch fix-login` to a run to work in a separate checkout. Reuse it later with `--workspace WORKSPACE_ID`.                                                                                             |
+| **Screenshot context**     | Send an image to an existing agent with `lyre send AGENT_ID --image screenshot.png "Explain this screenshot."`, then review the transfer prompt. The selected provider must support images.                                                |
+| **App preview setup**      | Inspect your project with `lyre preview inspect . --json`, review a configuration with `lyre preview plan . --port 5173 --json`, and control workspace services with `lyre script start` / `stop`. Agents and services stop independently. |
+| **Recurring agent tasks**  | Use `lyre schedule create` with a cadence, provider and task mode; inspect run history and pause or resume the schedule. The host must stay running.                                                                                       |
+| **Permission review**      | Use `lyre permit ls` to see pending requests, then approve or deny a specific request after reviewing it.                                                                                                                                  |
+| **Host plugins**           | Use `lyre plugin ls`, statically check a plugin with `lyre plugin check`, and review available updates with `lyre plugin update --all --check`. Install only code you trust.                                                               |
+
+Task modes guide the request; they do not change permissions. Preview viewing,
+app-sharing invitations and whole-desktop control use the supported Lyre clients.
+
+[**See complete CLI examples for these features →**](INSTALL.md#lyre-features-from-the-terminal)
 
 ## Major features
 
@@ -111,13 +158,13 @@ Available controls depend on the connection role and installed versions.
 Bring the coding agent you already use: **Claude Code, Codex, GitHub Copilot, OpenCode,
 and Pi** run side by side, organized by project. Pick a **task mode** in the composer:
 
-| Mode | Use it to |
-| --- | --- |
-| **Agent** | make the change end to end |
-| **Plan** | agree on an approach before any edits |
-| **Debug** | investigate a failure step by step |
-| **Ask** | get an answer without touching files |
-| **Multitask** | hand parts of a task to helper agents |
+| Mode            | Use it to                                                    |
+| --------------- | ------------------------------------------------------------ |
+| **Agent**       | make the change end to end                                   |
+| **Plan**        | agree on an approach before any edits                        |
+| **Debug**       | investigate a failure step by step                           |
+| **Ask**         | get an answer without touching files                         |
+| **Multitask**   | hand parts of a task to helper agents                        |
 | **Orchestrate** | coordinate larger work across helpers and review it together |
 
 Run independent work in separate **Git worktrees**, queue follow-up messages, dictate
@@ -181,8 +228,8 @@ Open a connected computer's **entire screen** from Lyre and take control, for th
 tools that don't live in a browser: a game engine, a design app, a build monitor.
 Remote desktop is native to Lyre, so a normal install needs **no Docker, RDP server,
 gateway, or SDK**. Each session asks for consent, and pairing alone never grants
-desktop access. *Early: cross-device qualification is ongoing, and support depends on
-platform, permissions, and build.*
+desktop access. _Early: cross-device qualification is ongoing, and support depends on
+platform, permissions, and build._
 
 ### Share the app, not the code
 
@@ -200,16 +247,16 @@ work finishes or a preview becomes ready.
 
 ## What's supported
 
-| | Supported today |
-| --- | --- |
-| **Host computers** | macOS (Apple silicon), Windows 64-bit, Linux 64-bit |
-| **Clients** | Lyre Studio desktop app; iOS and Android apps in testing |
-| **Coding agents** | Claude Code, Codex, GitHub Copilot, OpenCode, Pi |
-| **Model sources** | Provider accounts and API keys; Ollama, LM Studio, llama.cpp, and compatible local servers |
-| **Connections** | Direct on your local network or VPN, or through an end-to-end encrypted relay |
-| **Previews** | Web apps and browser games served by your project, on the desktop and on paired clients |
-| **Remote desktop** | Built-in whole-desktop viewing and control (early) |
-| **Accounts** | Local projects and local-network use need no Lyre cloud account |
+|                    | Supported today                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| **Host computers** | macOS (Apple silicon), Windows 64-bit, Linux 64-bit                                        |
+| **Clients**        | Lyre Studio desktop app; iOS and Android apps in testing                                   |
+| **Coding agents**  | Claude Code, Codex, GitHub Copilot, OpenCode, Pi                                           |
+| **Model sources**  | Provider accounts and API keys; Ollama, LM Studio, llama.cpp, and compatible local servers |
+| **Connections**    | Direct on your local network or VPN, or through an end-to-end encrypted relay              |
+| **Previews**       | Web apps and browser games served by your project, on the desktop and on paired clients    |
+| **Remote desktop** | Built-in whole-desktop viewing and control (early)                                         |
+| **Accounts**       | Local projects and local-network use need no Lyre cloud account                            |
 
 <details>
 <summary><strong>More in the workspace: publishing, marketplace, plugins, and customization</strong></summary>
