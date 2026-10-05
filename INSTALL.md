@@ -54,6 +54,10 @@ projects and coding agents; a connected Lyre client provides the graphical
 workspace. Downloading the desktop app and installing the npm CLI are separate
 installation choices.
 
+The website also has a [CLI quickstart](https://www.lyrestudio.net/docs/cli-quickstart.html),
+[command reference](https://www.lyrestudio.net/docs/cli.html) and
+[Lyre workflow examples](https://www.lyrestudio.net/docs/cli-workflows.html).
+
 ### 1. Install and check the CLI
 
 Install **Node.js 22.12 or newer** with npm, then open a terminal and run:

@@ -105,6 +105,10 @@ the required runtime packages automatically.
 [npm package](https://www.npmjs.com/package/@lyrestudio/cli) ·
 [Full CLI walkthrough, updates and troubleshooting](INSTALL.md#command-line-interface)
 
+[Website CLI quickstart](https://www.lyrestudio.net/docs/cli-quickstart.html) ·
+[Command reference](https://www.lyrestudio.net/docs/cli.html) ·
+[Lyre CLI workflows](https://www.lyrestudio.net/docs/cli-workflows.html)
+
 ### Lyre features you can use from the CLI
 
 The CLI brings more of Lyre's development workflow to your terminal:
