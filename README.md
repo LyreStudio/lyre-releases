@@ -59,6 +59,24 @@ testing and distribution channels; check [mobile availability](https://lyrestudi
 [Installation and updates](INSTALL.md) · [Release notes](https://github.com/LyreStudio/lyre-releases/releases) ·
 [Compare plans](https://lyrestudio.net/#pricing)
 
+### Install the CLI from npm
+
+Control Lyre projects, workspaces and agents from your terminal. Requires Node.js
+22.12 or newer:
+
+```sh
+npm install --global @lyrestudio/cli@beta
+lyre --version
+lyre --help
+```
+
+The npm CLI is **0.11.0-beta.3**, accompanying desktop **0.1.6**. The `lyre`,
+`lyre-foundation` and `paseo` commands use the same CLI. The initial npm release is
+verified on Windows x64 with Node.js 24; macOS/Linux qualification is pending.
+
+[npm package](https://www.npmjs.com/package/@lyrestudio/cli) ·
+[CLI setup and updates](INSTALL.md#command-line-interface)
+
 ## Major features
 
 ### Build together, with clear project access

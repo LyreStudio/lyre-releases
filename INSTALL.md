@@ -45,6 +45,40 @@ Phone clients are in testing. Distribution links will appear in the
 [availability guide](https://lyrestudio.net/docs/release-status.html#ios)
 when a public or testing channel is available.
 
+## Command-line interface
+
+Install the [Lyre Studio CLI](https://www.npmjs.com/package/@lyrestudio/cli)
+with Node.js **22.12 or newer**:
+
+```sh
+npm install --global @lyrestudio/cli@beta
+lyre --version
+lyre --help
+```
+
+To select this release explicitly, install
+`@lyrestudio/cli@0.11.0-beta.3`. The npm CLI and desktop app have separate
+version numbers; this CLI accompanies desktop **0.1.6**. The `lyre-foundation` and
+`paseo` executable aliases remain available.
+
+For a standalone host:
+
+```sh
+lyre daemon start
+lyre status
+lyre daemon stop
+```
+
+Repeat the npm install command to update the CLI. Keep your existing Lyre profile
+and project folders. Use `lyre --help` for commands and the
+[provider guide](https://lyrestudio.net/docs/providers.html) for account setup.
+
+The initial npm release is verified on **Windows x64 with Node.js 24**, including
+the Windows image-input and process helpers. macOS native helpers and installed
+macOS/Linux qualification are pending.
+Keep custom daemon home paths short: the Windows image-file helper does not
+support full image paths of 260 characters or more.
+
 ## Your first project
 
 Open a project folder in Lyre, connect a coding provider or local model, and set up
