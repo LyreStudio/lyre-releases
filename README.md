@@ -17,7 +17,21 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/LyreStudio/lyre-releases/releases/latest"><img src="https://img.shields.io/github/v/release/LyreStudio/lyre-releases?style=flat&label=latest&color=4378b5" alt="Latest Lyre Studio release"></a><br>
+  <a href="https://github.com/LyreStudio/lyre-releases/stargazers">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FLyreStudio%2Flyre-releases&query=%24.stargazers_count&label=stars&style=flat&logo=github&color=007ec6" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/LyreStudio/lyre-releases/releases/latest">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2FLyreStudio%2Flyre-releases%2Freleases%2Flatest&query=%24.tag_name&label=release&style=flat&logo=github&color=orange" alt="Latest Lyre Studio release">
+  </a>
+  <a href="https://x.com/BakhitJonathan">
+    <img src="https://img.shields.io/badge/%40BakhitJonathan-555?style=flat&logo=x" alt="Jonathan Bakhit on X">
+  </a>
+  <a href="https://discord.gg/eGjaBGJgp">
+    <img src="https://img.shields.io/badge/Discord-555?style=flat&logo=discord" alt="Lyre Discord community">
+  </a>
+  <a href="https://www.linkedin.com/in/jonathanbakhit/">
+    <img src="https://img.shields.io/badge/LinkedIn-555?style=flat" alt="Jonathan Bakhit on LinkedIn">
+  </a><br>
   <sub>macOS · Windows · Linux · Early access</sub>
 </p>
 
