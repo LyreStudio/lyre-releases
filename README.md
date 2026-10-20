@@ -40,22 +40,59 @@
   <br><sub>Real desktop and iPhone captures. Mobile clients are in testing.</sub>
 </p>
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>🤖 Build with agents</h3>
-      Claude, Codex, Copilot, OpenCode, and Pi in one workspace, with task modes from quick questions to orchestrated work.
-    </td>
-    <td width="33%" valign="top">
-      <h3>▶️ Try the real app</h3>
-      Run your project and keep a live preview beside the conversation. Review the diff, run the tests, try the result.
-    </td>
-    <td width="33%" valign="top">
-      <h3>📱 Take it anywhere</h3>
-      Continue from a paired phone, tablet, or computer, open your whole desktop remotely, or share just the app.
-    </td>
-  </tr>
+## Features at a glance
+
+<table width="100%">
+<tr>
+<td width="50%" valign="middle">
+<h3><a href="FEATURES.md#your-choice-of-coding-agent">Choose your coding agent</a></h3>
+<p>Pick the agent and model you want for the task.</p>
+<a href="FEATURES.md#your-choice-of-coding-agent">Details &rarr;</a>
+</td>
+<td width="50%" align="center">
+<a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choosing an OpenCode model in Lyre on Test Laptop." width="183"></picture></a>
+<br><sub>Test Laptop, Oct 17 · Lyre 0.1.7</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="middle">
+<h3><a href="FEATURES.md#continue-from-another-device">Continue from your phone</a></h3>
+<p>Open and interact with an app running on your computer.</p>
+<a href="FEATURES.md#continue-from-another-device">Details &rarr;</a>
+</td>
+<td width="50%" align="center">
+<a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="172"></picture></a>
+<br><sub>Samsung, Oct 20 · debug 0.1.8</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="middle">
+<h3><a href="FEATURES.md#visual-feedback-for-your-agent">Show your agent what to change</a></h3>
+<p>Attach a preview screenshot to your next message.</p>
+<a href="FEATURES.md#visual-feedback-for-your-agent">Details &rarr;</a>
+</td>
+<td width="50%" align="center">
+<a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attaching an app-preview screenshot to an unsent Lyre draft on Android." width="241"></picture></a>
+<br><sub>Samsung, Oct 20 · unsent draft</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="middle">
+<h3><a href="FEATURES.md#terminals-and-cli-profiles">Run project commands</a></h3>
+<p>Use a terminal alongside your conversation and app.</p>
+<a href="FEATURES.md#terminals-and-cli-profiles">Details &rarr;</a>
+</td>
+<td width="50%" align="center">
+<a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Typing terminal commands and reading their real output in Lyre on Test Laptop." width="343"></picture></a>
+<br><sub>Test Laptop, Oct 20 · test build</sub>
+</td>
+</tr>
 </table>
+
+**Also in Lyre:** [Live app previews](FEATURES.md#live-app-previews) · [Subagents for independent tasks](FEATURES.md#subagents-for-independent-tasks) · [Separate Git worktrees](FEATURES.md#separate-git-worktrees) · [Review and commit changes](FEATURES.md#review-and-commit-changes) · [Share an app with testers](FEATURES.md#share-an-app-with-testers) · [Built-in remote desktop](FEATURES.md#built-in-remote-desktop) · [Local models and routing](FEATURES.md#local-models-and-routing) · [Agent work across computers](FEATURES.md#agent-work-across-computers) · [Schedules, activity, and notifications](FEATURES.md#schedules-activity-and-notifications) · [Review before publishing](FEATURES.md#review-before-publishing).
+
+[**Explore all 14 features and full-size demos →**](FEATURES.md)
+
 
 ## Get Lyre Studio
 
@@ -191,12 +228,6 @@ Run independent work in separate **Git worktrees**, queue follow-up messages, di
 by voice, and attach screenshots or files. Provider accounts, installation, and model
 access vary by provider.
 
-<p align="center">
-  <a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choosing an OpenCode model in Lyre on Test Laptop." width="407"></picture></a>
-  <br><sub>Earlier Lyre 0.1.7 recording on Test Laptop, October 17. Model availability varies.</sub>
-</p>
-
-
 ### Your app, live, beside the chat
 
 Start your project's preview with **Open app** and try it next to the conversation,
@@ -218,12 +249,6 @@ it's ready.
 <p align="center">
   <img src="assets/review-changes.png" alt="Lyre Studio 0.1.4 Changes view showing the actual diff for a sample website edit" width="100%">
 </p>
-
-<p align="center">
-  <a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Typing terminal commands and reading their real output in Lyre on Test Laptop." width="510"></picture></a>
-  <br><sub>Test Laptop, October 20, using the installed test build. Real commands in a disposable demo workspace.</sub>
-</p>
-
 
 ### Your models, your way
 
@@ -248,8 +273,10 @@ game you're building from your phone. Connect directly on your network or throug
 **end-to-end encrypted relay**. The host must stay awake and connected.
 
 <p align="center">
-  <a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="540"></picture></a>
-  <br><sub>Samsung test phone connected to Test Laptop, October 20 (debug 0.1.8). Menu filtering in an open preview.</sub>
+  <img src="assets/phone-agent.png" alt="Reviewing an agent's completed change on iPhone" width="30%">&nbsp;
+  <img src="assets/phone-preview.png" alt="Trying the Harbor Kitchen sample website in Lyre on iPhone" width="30%">&nbsp;
+  <img src="assets/phone-game.png" alt="Playing the Orbit Run sample browser game in Lyre on iPhone" width="30%">
+  <br><sub>Direct the work. Try the website. Play the game.<br>Earlier testing-build captures; they show the workflow, not every platform's current release.</sub>
 </p>
 
 ### Your whole desktop, built in
