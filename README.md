@@ -144,6 +144,8 @@ app-sharing invitations and whole-desktop control use the supported Lyre clients
 
 ## Major features
 
+[**Explore the feature showcase →**](FEATURES.md)
+
 ### Build together, with clear project access
 
 Work with teammates on the same project from connected computers and mobile
@@ -189,6 +191,12 @@ Run independent work in separate **Git worktrees**, queue follow-up messages, di
 by voice, and attach screenshots or files. Provider accounts, installation, and model
 access vary by provider.
 
+<p align="center">
+  <a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choosing an OpenCode model in Lyre on Test Laptop." width="407"></picture></a>
+  <br><sub>Earlier Lyre 0.1.7 recording on Test Laptop, October 17. Model availability varies.</sub>
+</p>
+
+
 ### Your app, live, beside the chat
 
 Start your project's preview with **Open app** and try it next to the conversation,
@@ -210,6 +218,12 @@ it's ready.
 <p align="center">
   <img src="assets/review-changes.png" alt="Lyre Studio 0.1.4 Changes view showing the actual diff for a sample website edit" width="100%">
 </p>
+
+<p align="center">
+  <a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Typing terminal commands and reading their real output in Lyre on Test Laptop." width="510"></picture></a>
+  <br><sub>Test Laptop, October 20, using the installed test build. Real commands in a disposable demo workspace.</sub>
+</p>
+
 
 ### Your models, your way
 
@@ -285,7 +299,7 @@ work finishes or a preview becomes ready.
 - **Marketplace and plugins:** browse project starters and templates, and manage
   executable host plugins. Community Extensions are a discovery catalog; extension
   installation is unavailable.
-- **Guided or Developer:** choose a simpler project → chat → preview flow or a dense
+- **Simplified or Full:** choose a simpler project → chat → preview flow or a dense
   development workspace. Switching keeps your selected work and drafts.
 - **Library and projects:** find recent work across computers, group projects, and
   import sessions started in a terminal.
