@@ -144,8 +144,8 @@ use another. To follow a task, use `lyre logs AGENT_ID --follow`, replacing
 `AGENT_ID` with its ID from `lyre ls`. Use `lyre pair` to approve a trusted
 client and obtain connection instructions; review the requested owner access.
 
-The npm CLI is **0.11.0-beta.3**, accompanying desktop **0.1.6**. The `lyre`,
-`lyre-foundation` and `paseo` commands are aliases for the same CLI. npm installs
+The npm CLI is **0.11.0-beta.3**, accompanying desktop **0.1.6**. The `lyre` and
+`lyre-foundation` commands are aliases for the same CLI. npm installs
 the required runtime packages automatically.
 
 [npm package](https://www.npmjs.com/package/@lyrestudio/cli) ·
