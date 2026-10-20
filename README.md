@@ -248,10 +248,8 @@ game you're building from your phone. Connect directly on your network or throug
 **end-to-end encrypted relay**. The host must stay awake and connected.
 
 <p align="center">
-  <img src="assets/phone-agent.png" alt="Reviewing an agent's completed change on iPhone" width="30%">&nbsp;
-  <img src="assets/phone-preview.png" alt="Trying the Harbor Kitchen sample website in Lyre on iPhone" width="30%">&nbsp;
-  <img src="assets/phone-game.png" alt="Playing the Orbit Run sample browser game in Lyre on iPhone" width="30%">
-  <br><sub>Direct the work. Try the website. Play the game.<br>Earlier testing-build captures; they show the workflow, not every platform's current release.</sub>
+  <a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="540"></picture></a>
+  <br><sub>Samsung test phone connected to Test Laptop, October 20 (debug 0.1.8). Menu filtering in an open preview.</sub>
 </p>
 
 ### Your whole desktop, built in

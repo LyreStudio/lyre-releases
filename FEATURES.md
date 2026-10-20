@@ -14,6 +14,11 @@ and try it immediately. Agents and previews run independently.
 Open the same work from a paired phone, tablet, or computer. Send a follow-up,
 review a response, and interact with your app while the host keeps working.
 
+<p align="center">
+  <a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="540"></picture></a>
+  <br><sub>Samsung test phone connected to Test Laptop, October 20 (debug 0.1.8). Menu filtering in an open preview.</sub>
+</p>
+
 ## Your choice of coding agent
 
 Use Claude Code, Codex, GitHub Copilot, OpenCode, or Pi, with the models and accounts
@@ -49,6 +54,11 @@ Use built-in terminals to run your project’s checks, and keep pull-request and
 Attach a screenshot of the running app to show what needs attention. Supported
 desktop previews also let you pick an element and include its description in a
 targeted request.
+
+<p align="center">
+  <a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attaching an app-preview screenshot to an unsent Lyre draft on Android." width="540"></picture></a>
+  <br><sub>Samsung test phone, October 20 (debug 0.1.8). A preview screenshot attached to an unsent draft.</sub>
+</p>
 
 ## Share an app with testers
 
