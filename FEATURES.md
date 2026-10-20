@@ -15,8 +15,7 @@ Open the same work from a paired phone, tablet, or computer. Send a follow-up,
 review a response, and interact with your app while the host keeps working.
 
 <p align="center">
-  <a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="540"></picture></a>
-  <br><sub>Samsung test phone connected to Test Laptop, October 20 (debug 0.1.8). Menu filtering in an open preview.</sub>
+  <a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filter a menu in a live Lyre app preview." width="540"></picture></a>
 </p>
 
 ## Your choice of coding agent
@@ -28,8 +27,7 @@ debugging, or asking a question.
 Task modes include Agent, Plan, Debug, Ask, Multitask, and Orchestrate. Queue follow-ups, dictate, and attach files or screenshots through the existing composer. Provider support varies.
 
 <p align="center">
-  <a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choosing an OpenCode model in Lyre on Test Laptop." width="407"></picture></a>
-  <br><sub>Earlier Lyre 0.1.7 recording on Test Laptop, October 17. Model availability varies.</sub>
+  <a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choose a coding agent and model in Lyre." width="407"></picture></a>
 </p>
 
 ## Subagents for independent tasks
@@ -56,8 +54,7 @@ desktop previews also let you pick an element and include its description in a
 targeted request.
 
 <p align="center">
-  <a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attaching an app-preview screenshot to an unsent Lyre draft on Android." width="540"></picture></a>
-  <br><sub>Samsung test phone, October 20 (debug 0.1.8). A preview screenshot attached to an unsent draft.</sub>
+  <a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attach a preview screenshot to a Lyre message draft." width="540"></picture></a>
 </p>
 
 ## Share an app with testers
@@ -81,8 +78,7 @@ Open a terminal for your workspace or select a configured CLI profile. Run comma
 alongside the conversation and preview, with process controls in the workspace.
 
 <p align="center">
-  <a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Typing terminal commands and reading their real output in Lyre on Test Laptop." width="510"></picture></a>
-  <br><sub>Test Laptop, October 20, using the installed test build. Real commands in a disposable demo workspace.</sub>
+  <a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Run commands in a Lyre workspace terminal." width="510"></picture></a>
 </p>
 
 ## Local models and routing
@@ -119,6 +115,6 @@ Web, local, and mobile destinations retain their platform and account requiremen
 - **Library:** find recent work across computers, group projects, and connect supported sessions started in a terminal.
 - **Marketplace and plugins:** browse starters and templates, manage trusted executable plugins, and use supported optional extensions. Community catalog listings do not imply executable installation support.
 
-Capabilities depend on the installed build, connection role, platform, provider, plan, and configured services. The host must stay awake and connected for remote work. Clips identify their recording context; they do not certify every platform or release.
+Capabilities depend on the installed build, connection role, platform, provider, plan, and configured services. The host must stay awake and connected for remote work.
 
 [Installation](INSTALL.md) · [Mobile availability](https://lyrestudio.net/docs/release-status.html#ios) · [Plans](https://lyrestudio.net/#pricing) · [Release notes](https://github.com/LyreStudio/lyre-releases/releases) · [Support](https://lyrestudio.net/docs/index.html)

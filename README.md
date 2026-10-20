@@ -36,8 +36,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/lyre-hero.png" alt="Lyre Studio 0.1.4 on a desktop and iPhone: an agent changes the Harbor Kitchen sample website while the desktop shows the running app" width="100%">
-  <br><sub>Real desktop and iPhone captures. Mobile clients are in testing.</sub>
+  <img src="assets/lyre-hero.png" alt="Lyre on a desktop and iPhone: an agent changes the Harbor Kitchen sample website while the desktop shows the running app" width="100%">
 </p>
 
 ## Features at a glance
@@ -50,8 +49,7 @@
 <a href="FEATURES.md#your-choice-of-coding-agent">Details &rarr;</a>
 </td>
 <td width="50%" align="center">
-<a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choosing an OpenCode model in Lyre on Test Laptop." width="183"></picture></a>
-<br><sub>Test Laptop, Oct 17 · Lyre 0.1.7</sub>
+<a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choose a coding agent and model in Lyre." width="183"></picture></a>
 </td>
 </tr>
 <tr>
@@ -61,8 +59,7 @@
 <a href="FEATURES.md#continue-from-another-device">Details &rarr;</a>
 </td>
 <td width="50%" align="center">
-<a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filtering Test Laptop's app preview from the Samsung test phone." width="172"></picture></a>
-<br><sub>Samsung, Oct 20 · debug 0.1.8</sub>
+<a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filter a menu in a live Lyre app preview." width="172"></picture></a>
 </td>
 </tr>
 <tr>
@@ -72,8 +69,7 @@
 <a href="FEATURES.md#visual-feedback-for-your-agent">Details &rarr;</a>
 </td>
 <td width="50%" align="center">
-<a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attaching an app-preview screenshot to an unsent Lyre draft on Android." width="241"></picture></a>
-<br><sub>Samsung, Oct 20 · unsent draft</sub>
+<a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attach a preview screenshot to a Lyre message draft." width="241"></picture></a>
 </td>
 </tr>
 <tr>
@@ -83,8 +79,7 @@
 <a href="FEATURES.md#terminals-and-cli-profiles">Details &rarr;</a>
 </td>
 <td width="50%" align="center">
-<a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Typing terminal commands and reading their real output in Lyre on Test Laptop." width="343"></picture></a>
-<br><sub>Test Laptop, Oct 20 · test build</sub>
+<a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Run commands in a Lyre workspace terminal." width="343"></picture></a>
 </td>
 </tr>
 </table>
@@ -236,7 +231,7 @@ doesn't stop the other. Attach a preview screenshot to the next message when
 something looks off.
 
 <p align="center">
-  <img src="assets/desktop-studio.png" alt="Lyre Studio 0.1.4 workspace with the Harbor Kitchen app running in a live preview beside the project" width="100%">
+  <img src="assets/desktop-studio.png" alt="Lyre workspace with the Harbor Kitchen app running in a live preview beside the project" width="100%">
 </p>
 
 ### Review before you ship
@@ -247,7 +242,7 @@ keep iterating. A running app is something you can try; your checks decide wheth
 it's ready.
 
 <p align="center">
-  <img src="assets/review-changes.png" alt="Lyre Studio 0.1.4 Changes view showing the actual diff for a sample website edit" width="100%">
+  <img src="assets/review-changes.png" alt="Lyre Changes view showing the actual diff for a sample website edit" width="100%">
 </p>
 
 ### Your models, your way
@@ -262,7 +257,7 @@ it's ready.
 Local inference depends on your hardware and the chosen agent's model support.
 
 <p align="center">
-  <img src="assets/model-choice.png" alt="Lyre Studio 0.1.4 Connections screen showing model-source choices and setup actions" width="100%">
+  <img src="assets/model-choice.png" alt="Lyre Connections screen showing model-source choices and setup actions" width="100%">
 </p>
 
 ### Continue on any device
@@ -276,7 +271,6 @@ game you're building from your phone. Connect directly on your network or throug
   <img src="assets/phone-agent.png" alt="Reviewing an agent's completed change on iPhone" width="30%">&nbsp;
   <img src="assets/phone-preview.png" alt="Trying the Harbor Kitchen sample website in Lyre on iPhone" width="30%">&nbsp;
   <img src="assets/phone-game.png" alt="Playing the Orbit Run sample browser game in Lyre on iPhone" width="30%">
-  <br><sub>Direct the work. Try the website. Play the game.<br>Earlier testing-build captures; they show the workflow, not every platform's current release.</sub>
 </p>
 
 ### Your whole desktop, built in
