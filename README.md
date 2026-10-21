@@ -39,54 +39,23 @@
   <img src="assets/lyre-hero.png" alt="Lyre on a desktop and iPhone: an agent changes the Harbor Kitchen sample website while the desktop shows the running app" width="100%">
 </p>
 
-## Features at a glance
+## Main features
 
-<table width="100%">
-<tr>
-<td width="50%" valign="middle">
-<h3><a href="FEATURES.md#your-choice-of-coding-agent">Choose your coding agent</a></h3>
-<p>Pick the agent and model you want for the task.</p>
-<a href="FEATURES.md#your-choice-of-coding-agent">Details &rarr;</a>
-</td>
-<td width="50%" align="center">
-<a href="assets/features/03-agent-choice.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/03-agent-choice.jpg"><source srcset="assets/features/03-agent-choice.gif" type="image/gif"><img src="assets/features/03-agent-choice.jpg" alt="Choose a coding agent and model in Lyre." width="183"></picture></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="middle">
-<h3><a href="FEATURES.md#continue-from-another-device">Continue from your phone</a></h3>
-<p>Open and interact with an app running on your computer.</p>
-<a href="FEATURES.md#continue-from-another-device">Details &rarr;</a>
-</td>
-<td width="50%" align="center">
-<a href="assets/features/02-any-device.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/02-any-device.jpg"><source srcset="assets/features/02-any-device.gif" type="image/gif"><img src="assets/features/02-any-device.jpg" alt="Filter a menu in a live Lyre app preview." width="172"></picture></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="middle">
-<h3><a href="FEATURES.md#visual-feedback-for-your-agent">Show your agent what to change</a></h3>
-<p>Attach a preview screenshot to your next message.</p>
-<a href="FEATURES.md#visual-feedback-for-your-agent">Details &rarr;</a>
-</td>
-<td width="50%" align="center">
-<a href="assets/features/07-visual-feedback.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/07-visual-feedback.jpg"><source srcset="assets/features/07-visual-feedback.gif" type="image/gif"><img src="assets/features/07-visual-feedback.jpg" alt="Attach a preview screenshot to a Lyre message draft." width="241"></picture></a>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="middle">
-<h3><a href="FEATURES.md#terminals-and-cli-profiles">Run project commands</a></h3>
-<p>Use a terminal alongside your conversation and app.</p>
-<a href="FEATURES.md#terminals-and-cli-profiles">Details &rarr;</a>
-</td>
-<td width="50%" align="center">
-<a href="assets/features/10-terminals.gif"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/features/10-terminals.jpg"><source srcset="assets/features/10-terminals.gif" type="image/gif"><img src="assets/features/10-terminals.jpg" alt="Run commands in a Lyre workspace terminal." width="343"></picture></a>
-</td>
-</tr>
-</table>
+- [Choose your coding agent](FEATURES.md#your-choice-of-coding-agent) and model.
+- [Try live app previews](FEATURES.md#live-app-previews) beside your conversation.
+- [Continue from a paired phone, tablet, or computer](FEATURES.md#continue-from-another-device).
+- [Delegate tasks to subagents](FEATURES.md#subagents-for-independent-tasks).
+- [Show your agent what to change](FEATURES.md#visual-feedback-for-your-agent) with a screenshot.
+- [Run project commands](FEATURES.md#terminals-and-cli-profiles) in built-in terminals.
 
-**Also in Lyre:** [Live app previews](FEATURES.md#live-app-previews) · [Subagents for independent tasks](FEATURES.md#subagents-for-independent-tasks) · [Separate Git worktrees](FEATURES.md#separate-git-worktrees) · [Review and commit changes](FEATURES.md#review-and-commit-changes) · [Share an app with testers](FEATURES.md#share-an-app-with-testers) · [Built-in remote desktop](FEATURES.md#built-in-remote-desktop) · [Local models and routing](FEATURES.md#local-models-and-routing) · [Agent work across computers](FEATURES.md#agent-work-across-computers) · [Schedules, activity, and notifications](FEATURES.md#schedules-activity-and-notifications) · [Review before publishing](FEATURES.md#review-before-publishing).
+**Also in Lyre:**
 
-[**Explore all 14 features and full-size demos →**](FEATURES.md)
+- [Git worktrees](FEATURES.md#separate-git-worktrees) and [change review and commits](FEATURES.md#review-and-commit-changes).
+- [App sharing](FEATURES.md#share-an-app-with-testers) and [built-in remote desktop](FEATURES.md#built-in-remote-desktop).
+- [Local models and routing](FEATURES.md#local-models-and-routing) and [agent work across computers](FEATURES.md#agent-work-across-computers).
+- [Schedules, activity, and notifications](FEATURES.md#schedules-activity-and-notifications) and [publishing review](FEATURES.md#review-before-publishing).
+
+[**Explore all features →**](FEATURES.md)
 
 
 ## Get Lyre Studio
