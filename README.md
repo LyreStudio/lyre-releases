@@ -58,6 +58,17 @@
 [**Explore all features →**](FEATURES.md)
 
 
+## Try a complete workflow
+
+- [Use Claude Code from your phone](https://www.lyrestudio.net/docs/claude-code-from-phone.html).
+- [Use Codex from your phone](https://www.lyrestudio.net/docs/codex-from-phone.html).
+- [Share a local app with a tester](https://www.lyrestudio.net/docs/share-local-app-with-tester.html).
+- [Evaluate Lyre with the facts and review guide](https://www.lyrestudio.net/docs/lyre-facts-and-review-guide.html).
+
+Check [current host and client availability](https://www.lyrestudio.net/docs/release-status.html)
+before trying a workflow. The review guide explains the running-host requirement,
+preview scope, access limits and separate provider costs.
+
 ## Get Lyre Studio
 
 [**Download the latest release →**](https://github.com/LyreStudio/lyre-releases/releases/latest)
